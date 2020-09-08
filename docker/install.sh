@@ -3,7 +3,6 @@
 curl -fsSL https://gitee.com/godu/install/raw/master/docker/get-docker.sh | bash -s docker --mirror Aliyun
 cat > /etc/docker/daemon.json <<EOF
 {
-  "exec-opts": ["native.cgroupdriver=systemd"],
   "registry-mirrors": ["https://reg-mirror.qiniu.com","https://dyucrs4l.mirror.aliyuncs.com"],
   "bip": "169.254.0.1/24",
   "max-concurrent-downloads": 10,
